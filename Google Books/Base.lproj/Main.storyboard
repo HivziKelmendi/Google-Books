@@ -64,7 +64,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCell" id="9LL-hF-2oz" userLabel="BookCell" customClass="BookCell" customModule="Networking_Manager" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCell" id="9LL-hF-2oz" userLabel="BookCell" customClass="BookCell" customModule="Google_Books" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="156" height="191"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="C6z-CF-T7j">
@@ -115,7 +115,7 @@
                     <navigationItem key="navigationItem" id="zbf-Zq-cUn"/>
                     <connections>
                         <outlet property="colletcionView" destination="ozk-D3-3ys" id="Y3j-ny-2IK"/>
-                        <segue destination="Z7f-xo-2hQ" kind="presentation" identifier="goToBookInfo" id="Grl-IB-RkH"/>
+                        <segue destination="Z7f-xo-2hQ" kind="show" identifier="goToBookInfo" id="Grl-IB-RkH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0x-Jo-0IJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -145,7 +145,7 @@
             <objects>
                 <viewController id="Z7f-xo-2hQ" customClass="BookInfoVC" customModule="Google_Books" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7bD-dt-m6z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title Book" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDe-sO-Z1U">
@@ -158,7 +158,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LFw-lh-tOW">
-                                <rect key="frame" x="8" y="21.5" width="167" height="227.5"/>
+                                <rect key="frame" x="8" y="109.5" width="167" height="227.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="230" id="1wS-QF-eIC"/>
                                     <constraint firstAttribute="width" constant="167" id="HNR-bq-Adj"/>
@@ -166,7 +166,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="26" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T5-2s-Mcc">
-                                <rect key="frame" x="10" y="466" width="394" height="352"/>
+                                <rect key="frame" x="10" y="520" width="394" height="352"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="352" id="Ruz-kC-Wch"/>
                                 </constraints>
@@ -175,7 +175,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="r8f-Fp-7hs">
-                                <rect key="frame" x="10" y="281" width="384" height="123"/>
+                                <rect key="frame" x="10" y="369" width="384" height="123"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Publisher label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUg-6W-3Xt">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="33"/>
@@ -201,7 +201,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jb9-4u-8tp">
-                                <rect key="frame" x="10" y="435" width="102" height="23"/>
+                                <rect key="frame" x="10" y="489" width="102" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="CCt-XX-VhF"/>
                                 </constraints>

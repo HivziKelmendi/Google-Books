@@ -30,7 +30,7 @@ class BookInfoVC: UIViewController {
             let author1 = item.volumeInfo.authors?[0]
             if item.volumeInfo.authors?.count == 2 {
             author2 =  item.volumeInfo.authors?[1]
-               
+            
             }
             authorsLabel.text = "by: \(author1 ?? "N/A") \(author2 ?? "")"
             
@@ -45,7 +45,12 @@ class BookInfoVC: UIViewController {
                 }
             }
         }
+    
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        let persistence = PersistenceManager()
+        persistence.saveBook(model: item)
+      
+    }
         
-
     
 }

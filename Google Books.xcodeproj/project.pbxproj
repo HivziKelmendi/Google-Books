@@ -21,6 +21,7 @@
 		5EAA264928AA369F00B75ADA /* BookInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264828AA369F00B75ADA /* BookInfoVC.swift */; };
 		5EAA264B28AA36C100B75ADA /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264A28AA36C100B75ADA /* Book.swift */; };
 		5EAA264D28AA371700B75ADA /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264C28AA371700B75ADA /* BookCell.swift */; };
+		5EAA264F28AAD12D00B75ADA /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264E28AAD12D00B75ADA /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		5EAA264828AA369F00B75ADA /* BookInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoVC.swift; sourceTree = "<group>"; };
 		5EAA264A28AA36C100B75ADA /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		5EAA264C28AA371700B75ADA /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		5EAA264E28AAD12D00B75ADA /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				5EAA264828AA369F00B75ADA /* BookInfoVC.swift */,
 				5EAA264A28AA36C100B75ADA /* Book.swift */,
 				5EAA264C28AA371700B75ADA /* BookCell.swift */,
+				5EAA264E28AAD12D00B75ADA /* PersistenceManager.swift */,
 			);
 			path = "Google Books";
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				5EAA262E28AA31C500B75ADA /* ViewController.swift in Sources */,
 				5EAA264128AA31F200B75ADA /* Network Manager.swift in Sources */,
 				5EAA264D28AA371700B75ADA /* BookCell.swift in Sources */,
+				5EAA264F28AAD12D00B75ADA /* PersistenceManager.swift in Sources */,
 				5EAA262A28AA31C500B75ADA /* AppDelegate.swift in Sources */,
 				5EAA264728AA362D00B75ADA /* BookListVC.swift in Sources */,
 				5EAA264528AA35B200B75ADA /* SearchBookVC.swift in Sources */,
