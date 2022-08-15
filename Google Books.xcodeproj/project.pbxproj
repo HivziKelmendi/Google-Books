@@ -14,6 +14,13 @@
 		5EAA263428AA31C500B75ADA /* Google_Books.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA263228AA31C500B75ADA /* Google_Books.xcdatamodeld */; };
 		5EAA263628AA31C700B75ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA263528AA31C700B75ADA /* Assets.xcassets */; };
 		5EAA263928AA31C700B75ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EAA263728AA31C700B75ADA /* LaunchScreen.storyboard */; };
+		5EAA264128AA31F200B75ADA /* Network Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264028AA31F200B75ADA /* Network Manager.swift */; };
+		5EAA264328AA326000B75ADA /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264228AA326000B75ADA /* Errors.swift */; };
+		5EAA264528AA35B200B75ADA /* SearchBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264428AA35B200B75ADA /* SearchBookVC.swift */; };
+		5EAA264728AA362D00B75ADA /* BookListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264628AA362D00B75ADA /* BookListVC.swift */; };
+		5EAA264928AA369F00B75ADA /* BookInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264828AA369F00B75ADA /* BookInfoVC.swift */; };
+		5EAA264B28AA36C100B75ADA /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264A28AA36C100B75ADA /* Book.swift */; };
+		5EAA264D28AA371700B75ADA /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264C28AA371700B75ADA /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		5EAA263528AA31C700B75ADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EAA263828AA31C700B75ADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EAA263A28AA31C700B75ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EAA264028AA31F200B75ADA /* Network Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Manager.swift"; sourceTree = "<group>"; };
+		5EAA264228AA326000B75ADA /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		5EAA264428AA35B200B75ADA /* SearchBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookVC.swift; sourceTree = "<group>"; };
+		5EAA264628AA362D00B75ADA /* BookListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListVC.swift; sourceTree = "<group>"; };
+		5EAA264828AA369F00B75ADA /* BookInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoVC.swift; sourceTree = "<group>"; };
+		5EAA264A28AA36C100B75ADA /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		5EAA264C28AA371700B75ADA /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,13 @@
 				5EAA263728AA31C700B75ADA /* LaunchScreen.storyboard */,
 				5EAA263A28AA31C700B75ADA /* Info.plist */,
 				5EAA263228AA31C500B75ADA /* Google_Books.xcdatamodeld */,
+				5EAA264028AA31F200B75ADA /* Network Manager.swift */,
+				5EAA264228AA326000B75ADA /* Errors.swift */,
+				5EAA264428AA35B200B75ADA /* SearchBookVC.swift */,
+				5EAA264628AA362D00B75ADA /* BookListVC.swift */,
+				5EAA264828AA369F00B75ADA /* BookInfoVC.swift */,
+				5EAA264A28AA36C100B75ADA /* Book.swift */,
+				5EAA264C28AA371700B75ADA /* BookCell.swift */,
 			);
 			path = "Google Books";
 			sourceTree = "<group>";
@@ -142,9 +163,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EAA262E28AA31C500B75ADA /* ViewController.swift in Sources */,
+				5EAA264128AA31F200B75ADA /* Network Manager.swift in Sources */,
+				5EAA264D28AA371700B75ADA /* BookCell.swift in Sources */,
 				5EAA262A28AA31C500B75ADA /* AppDelegate.swift in Sources */,
+				5EAA264728AA362D00B75ADA /* BookListVC.swift in Sources */,
+				5EAA264528AA35B200B75ADA /* SearchBookVC.swift in Sources */,
 				5EAA262C28AA31C500B75ADA /* SceneDelegate.swift in Sources */,
+				5EAA264328AA326000B75ADA /* Errors.swift in Sources */,
 				5EAA263428AA31C500B75ADA /* Google_Books.xcdatamodeld in Sources */,
+				5EAA264B28AA36C100B75ADA /* Book.swift in Sources */,
+				5EAA264928AA369F00B75ADA /* BookInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
