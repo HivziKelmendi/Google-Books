@@ -18,12 +18,11 @@ class BookListVC: UIViewController {
         colletcionView.delegate = self
         colletcionView.dataSource = self
         let layout = UICollectionViewFlowLayout()
-            layout.itemSize = CGSize(width: 200, height: 300)
-                colletcionView.collectionViewLayout = layout
+        layout.itemSize = CGSize(width: 200, height: 300)
+        colletcionView.collectionViewLayout = layout
         super.viewDidLoad()
         getData()
     }
-    
     
     func getData() {
     NetworkManager.shared.getData(for: textInTextField) { result in
@@ -56,10 +55,8 @@ extension BookListVC: UICollectionViewDataSource, UICollectionViewDelegate {
         cell.setup(with: books[indexPath.row])
         return cell
     }
-
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
         performSegue(withIdentifier: "goToBookInfo", sender: self)
     }
     
@@ -67,15 +64,12 @@ extension BookListVC: UICollectionViewDataSource, UICollectionViewDelegate {
         let destinationVC = segue.destination as! BookInfoVC
         if let indexPaths = colletcionView!.indexPathsForSelectedItems {
             destinationVC.item = books[indexPaths[0].row]
-            
-        }
-       }
+            }
+      }
 }
 
 extension BookListVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 180, height: 270)
     }
-    
-    
 }

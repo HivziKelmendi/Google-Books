@@ -9,9 +9,10 @@
         <attribute name="publishedDate" optional="YES" attributeType="String"/>
         <attribute name="publisher" optional="YES" attributeType="String"/>
         <attribute name="subtitle" optional="YES" attributeType="String"/>
+        <attribute name="thumbnail" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="FavoriteBook" positionX="-63" positionY="-18" width="128" height="164"/>
+        <element name="FavoriteBook" positionX="-63" positionY="-18" width="128" height="179"/>
     </elements>
 </model>

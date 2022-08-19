@@ -22,6 +22,8 @@
 		5EAA264B28AA36C100B75ADA /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264A28AA36C100B75ADA /* Book.swift */; };
 		5EAA264D28AA371700B75ADA /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264C28AA371700B75ADA /* BookCell.swift */; };
 		5EAA264F28AAD12D00B75ADA /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA264E28AAD12D00B75ADA /* PersistenceManager.swift */; };
+		5EAA265128AB8D0100B75ADA /* FavoriteBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA265028AB8D0100B75ADA /* FavoriteBookVC.swift */; };
+		5EAA265328AB8D9700B75ADA /* FavoriteBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA265228AB8D9700B75ADA /* FavoriteBookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		5EAA264A28AA36C100B75ADA /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		5EAA264C28AA371700B75ADA /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		5EAA264E28AAD12D00B75ADA /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		5EAA265028AB8D0100B75ADA /* FavoriteBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBookVC.swift; sourceTree = "<group>"; };
+		5EAA265228AB8D9700B75ADA /* FavoriteBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				5EAA264A28AA36C100B75ADA /* Book.swift */,
 				5EAA264C28AA371700B75ADA /* BookCell.swift */,
 				5EAA264E28AAD12D00B75ADA /* PersistenceManager.swift */,
+				5EAA265028AB8D0100B75ADA /* FavoriteBookVC.swift */,
+				5EAA265228AB8D9700B75ADA /* FavoriteBookCell.swift */,
 			);
 			path = "Google Books";
 			sourceTree = "<group>";
@@ -170,8 +176,10 @@
 				5EAA264D28AA371700B75ADA /* BookCell.swift in Sources */,
 				5EAA264F28AAD12D00B75ADA /* PersistenceManager.swift in Sources */,
 				5EAA262A28AA31C500B75ADA /* AppDelegate.swift in Sources */,
+				5EAA265128AB8D0100B75ADA /* FavoriteBookVC.swift in Sources */,
 				5EAA264728AA362D00B75ADA /* BookListVC.swift in Sources */,
 				5EAA264528AA35B200B75ADA /* SearchBookVC.swift in Sources */,
+				5EAA265328AB8D9700B75ADA /* FavoriteBookCell.swift in Sources */,
 				5EAA262C28AA31C500B75ADA /* SceneDelegate.swift in Sources */,
 				5EAA264328AA326000B75ADA /* Errors.swift in Sources */,
 				5EAA263428AA31C500B75ADA /* Google_Books.xcdatamodeld in Sources */,

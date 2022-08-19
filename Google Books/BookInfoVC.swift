@@ -48,7 +48,7 @@ class BookInfoVC: UIViewController {
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         let persistence = PersistenceManager()
-        persistence.saveBook(model: item)
+        persistence.saveBook(item: item)
       
     }
         
