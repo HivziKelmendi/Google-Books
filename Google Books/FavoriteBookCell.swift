@@ -16,7 +16,7 @@ class FavoriteBookCell: UITableViewCell {
     @IBOutlet weak var favoriteAuthor: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+      
     }
     
    

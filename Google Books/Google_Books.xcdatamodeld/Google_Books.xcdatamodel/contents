@@ -3,7 +3,7 @@
     <entity name="FavoriteBook" representedClassName="FavoriteBook" syncable="YES" codeGenerationType="class">
         <attribute name="author1" optional="YES" attributeType="String"/>
         <attribute name="author2" optional="YES" attributeType="String"/>
-        <attribute name="descript" optional="YES" attributeType="String"/>
+        <attribute name="descript" optional="YES" attributeType="String" maxValueString="500"/>
         <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="pageNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="publishedDate" optional="YES" attributeType="String"/>

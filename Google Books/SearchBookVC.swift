@@ -14,11 +14,20 @@ class SearchBookVC: UIViewController {
     override func viewDidLoad() {
         searchTextField.delegate = self
         super.viewDidLoad()
+        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
     }
-
+   
     
     @IBAction func get(_ sender: Any) {
         searchTextField.endEditing(true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = false
+        
     }
 }
 
@@ -36,14 +45,15 @@ extension SearchBookVC: UITextFieldDelegate {
         if textField.text != "" {
             return true
         } else {
-            textField.placeholder = " type email address"
+            textField.placeholder = " searche here"
             return false
         }
     }
     
     // me kete metode tregohet se perfundon editimi ne kete textfield
     func textFieldDidEndEditing(_ textField: UITextField) {
-        // ketu ducase het shkruajtur funksioni per ekzekutim parametrit te dhene ne textfield
+        // ketu duhet shkruajtur funksioni per ekzekutim parametrit te dhene ne textfield
+        
         textInTextField = textField.text
         guard textInTextField != nil  else {return}
             performSegue(withIdentifier: "BookList", sender: self)
@@ -54,11 +64,10 @@ extension SearchBookVC: UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as? BookListVC
         if segue.identifier == "BookList"  {
-            destinationVC?.textInTextField = textInTextField
+            guard let textInTextField = textInTextField else { return }
+            let modifiedtextField = textInTextField.replacingOccurrences(of: " ", with: "%20")
+            destinationVC?.textInTextField = modifiedtextField
         }
     }
-    
-    
-    
-
+        
 }

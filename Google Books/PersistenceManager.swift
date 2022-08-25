@@ -16,17 +16,21 @@ class PersistenceManager {
     let savedBook = FavoriteBook(context: self.context)
         savedBook.title = item.volumeInfo.title
         savedBook.author1 = item.volumeInfo.authors?[0] ?? "N/A"
-        
+        savedBook.descript = item.volumeInfo.description
         if item.volumeInfo.authors?.count == 2 {
         savedBook.author2 = item.volumeInfo.authors?[1] ?? ""
         }
+        savedBook.pageNumber = Int32(item.volumeInfo.pageCount ?? 0)
         savedBook.publishedDate = item.volumeInfo.publishedDate
         savedBook.publisher = item.volumeInfo.publisher
         savedBook.thumbnail = item.volumeInfo.imageLinks?.thumbnail
         
+        saveBooks()
+    }
+    
+    func saveBooks() {
         do {
             try context.save()
-            print("the favorite book is saved")
         } catch {
             print("error saving context \(error)")
         }
